@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Datos de Cliente</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+<body>
+    <div class="container">
+        <h2>Ingrese los datos del cliente</h2>
+        <form id="clienteForm"> <!-- Inicio del formulario con un ID único -->
+            <!-- Campo para el nombre del cliente -->
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <!-- Campo para el correo electrónico del cliente -->
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <!-- Campo para el teléfono del cliente -->
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            <!-- Campo para la dirección del cliente -->
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <!-- Campo para la ciudad del cliente -->
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+            </div>
+            <!-- Campo para el país del cliente -->
+            <div class="form-group">
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required>
+            </div>
+            <!-- Campo para seleccionar el estado o provincia del cliente -->
+            <div class="form-group">
+                <label for="estado">Estado/Provincia:</label>
+                <select id="estado" name="estado" required>
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="estado1">Estado 1</option>
+                    <option value="estado2">Estado 2</option>
+                    <option value="estado3">Estado 3</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <!-- Botón de envío del formulario -->
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
